@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Марина Петрова](https://up.htmlacademy.ru/adaptive/18/user/1176497).
-* Наставник: `Неизвестно`.
+- Студент: [Марина Петрова](https://up.htmlacademy.ru/adaptive/18/user/1176497).
+- Наставник: [Дмитрий Аверин](https://htmlacademy.ru/profile/id1061531).
 
 ---
 
