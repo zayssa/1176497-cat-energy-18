@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header-logo">
+      <a href="#" class="header__logo">
         <img
           src="https://via.placeholder.com/191x39"
           alt="Логотип CatEnergy"
@@ -17,23 +17,26 @@
           height="39"
         />
       </a>
-      <div class="header-nav">
-        <button class="nav-trigger" title="Навигация"></button>
+      <div class="header__nav">
+        <nav class="nav">
+          <button class="nav__trigger" title="Навигация"></button>
+        </nav>
       </div>
     </header>
-    <main class="category">
-      <h1>Каталог продукции</h1>
-      <ul class="category-list">
-        <li class="category-item">
+    <main class="categorypage">
+      <h1 class="categorypage__title">Каталог продукции</h1>
+      <ul class="categorypage__list products">
+        <li class="products__item">
           <img
             src="https://via.placeholder.com/140x144"
             alt="Cat Energy PRO 500 г"
             title="Cat Energy PRO 500 г"
             width="140"
             height="144"
+            class="products__illustration"
           />
-          <span>Cat Energy PRO 500 г</span>
-          <table>
+          <span class="products__name">Cat Energy PRO 500 г</span>
+          <table class="products__params">
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -48,18 +51,21 @@
             </tr>
           </table>
 
-          <button type="button">Заказать</button>
+          <button class="products__button button" type="button">
+            Заказать
+          </button>
         </li>
-        <li class="category-item">
+        <li class="products__item">
           <img
             src="https://via.placeholder.com/140x144"
             alt="Cat Energy PRO 1000 г"
             title="Cat Energy PRO 1000 г"
             width="140"
             height="144"
+            class="products__illustration"
           />
-          <span>Cat Energy PRO 1000 г</span>
-          <table>
+          <span class="products__name">Cat Energy PRO 1000 г</span>
+          <table class="products__params">
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -74,18 +80,21 @@
             </tr>
           </table>
 
-          <button type="button">Заказать</button>
+          <button class="products__button button" type="button">
+            Заказать
+          </button>
         </li>
-        <li class="category-item">
+        <li class="products__item">
           <img
             src="https://via.placeholder.com/140x144"
             alt="Cat Energy PRO 500 г"
             title="Cat Energy PRO 500 г"
             width="140"
             height="144"
+            class="products__illustration"
           />
-          <span>Cat Energy PRO 500 г</span>
-          <table>
+          <span class="products__name">Cat Energy PRO 500 г</span>
+          <table class="products__params">
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -100,18 +109,21 @@
             </tr>
           </table>
 
-          <button type="button">Заказать</button>
+          <button class="products__button button" type="button">
+            Заказать
+          </button>
         </li>
-        <li class="category-item">
+        <li class="products__item">
           <img
             src="https://via.placeholder.com/140x144"
             alt="Cat Energy PRO 1000 г"
             title="Cat Energy PRO 1000 г"
             width="140"
             height="144"
+            class="products__illustration"
           />
-          <span>Cat Energy PRO 1000 г</span>
-          <table>
+          <span class="products__name">Cat Energy PRO 1000 г</span>
+          <table class="products__params">
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -126,18 +138,21 @@
             </tr>
           </table>
 
-          <button type="button">Заказать</button>
+          <button class="products__button button" type="button">
+            Заказать
+          </button>
         </li>
-        <li class="category-item">
+        <li class="products__item">
           <img
             src="https://via.placeholder.com/140x144"
             alt="Cat Energy SLIM 500 г"
             title="Cat Energy SLIM 500 г"
             width="140"
             height="144"
+            class="products__illustration"
           />
-          <span>Cat Energy SLIM 500 г</span>
-          <table>
+          <span class="products__name">Cat Energy SLIM 500 г</span>
+          <table class="products__params">
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -152,18 +167,21 @@
             </tr>
           </table>
 
-          <button type="button">Заказать</button>
+          <button class="products__button button" type="button">
+            Заказать
+          </button>
         </li>
-        <li class="category-item">
+        <li class="products__item">
           <img
             src="https://via.placeholder.com/140x144"
             alt="Cat Energy SLIM 1000 г"
             title="Cat Energy SLIM 1000 г"
             width="140"
             height="144"
+            class="products__illustration"
           />
-          <span>Cat Energy SLIM 1000 г</span>
-          <table>
+          <span class="products__name">Cat Energy SLIM 1000 г</span>
+          <table class="products__params">
             <tr>
               <td>Объем</td>
               <td>1000 г</td>
@@ -178,18 +196,21 @@
             </tr>
           </table>
 
-          <button type="button">Заказать</button>
+          <button class="products__button button" type="button">
+            Заказать
+          </button>
         </li>
-        <li class="category-item">
+        <li class="products__item">
           <img
             src="https://via.placeholder.com/140x144"
             alt="Cat Energy SLIM 500 г"
             title="Cat Energy SLIM 500 г"
             width="140"
             height="144"
+            class="products__illustration"
           />
-          <span>Cat Energy SLIM 500 г</span>
-          <table>
+          <span class="products__name">Cat Energy SLIM 500 г</span>
+          <table class="products__params">
             <tr>
               <td>Объем</td>
               <td>500 г</td>
@@ -204,24 +225,27 @@
             </tr>
           </table>
 
-          <button type="button">Заказать</button>
+          <button class="products__button button" type="button">
+            Заказать
+          </button>
         </li>
       </ul>
-      <div class="category-more">
+      <div class="categorypage__more more">
         <img
           src="https://via.placeholder.com/31x31"
           alt="Плюс"
           title="Плюс"
           width="31"
           height="31"
+          class="more__plus"
         />
-        <p>Показать еще 100500 товаров</p>
-        <p>На самом деле вкусов гораздо больше!</p>
-        <button type="button">Показать все</button>
+        <p class="more__count">Показать еще 100500 товаров</p>
+        <p class="more__notice">На самом деле вкусов гораздо больше!</p>
+        <button class="more__button button" type="button">Показать все</button>
       </div>
     </main>
     <footer class="footer">
-      <a href="#" class="footer-logo">
+      <a href="#" class="footer__logo">
         <img
           src="https://via.placeholder.com/128x24"
           alt="Логотип CatEnergy"
@@ -230,9 +254,9 @@
           height="24"
         />
       </a>
-      <div class="footer-social">
-        <ul>
-          <li class="social-items">
+      <div class="footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
             <a href="#">
               <img
                 src="https://via.placeholder.com/22x12"
@@ -243,7 +267,7 @@
               />
             </a>
           </li>
-          <li class="social-items">
+          <li class="socials__item">
             <a href="#">
               <img
                 src="https://via.placeholder.com/17x17"
@@ -254,7 +278,7 @@
               />
             </a>
           </li>
-          <li class="social-items">
+          <li class="socials__item">
             <a href="#">
               <img
                 src="https://via.placeholder.com/10x19"
@@ -267,7 +291,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer-madeby">
+      <div class="footer__madeby">
         <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
           >HTML Academy</a
         >
