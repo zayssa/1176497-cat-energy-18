@@ -1,3 +1,26 @@
+@import "node_modules/normalize.css/normalize";
+@import "-variables";
+@import "-utilities";
+@import "header";
+@import "nav";
+@import "main-page";
+@import "titlescreen";
+@import "button";
+@import "categories";
+@import "category-card";
+@import "howitworks";
+@import "example";
+@import "statistic";
+@import "toggler";
+@import "contacts";
+@import "footer";
+@import "category-page";
+@import "products";
+@import "params";
+@import "more";
 body {
-  background: blue;
+  color: $text;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
