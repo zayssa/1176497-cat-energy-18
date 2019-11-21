@@ -18,9 +18,10 @@
 @import "products";
 @import "params";
 @import "more";
+
 body {
   color: $text;
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
