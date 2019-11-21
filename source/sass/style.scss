@@ -8,10 +8,10 @@
 @import "blocks/contacts";
 @import "blocks/socials";
 @import "blocks/footer";
-
+// form elements
 @import "forms/button";
 @import "forms/toggler";
-
+// blocks
 @import "blocks/main-page";
 @import "blocks/titlescreen";
 @import "blocks/categories";
@@ -24,3 +24,9 @@
 @import "blocks/params";
 @import "blocks/more";
 @import "blocks/additional";
+@import "blocks/banner";
+@import "blocks/order-page";
+@import "blocks/form-section";
+@import "forms/text-field";
+@import "forms/radio-group";
+@import "forms/checkbox-group";
