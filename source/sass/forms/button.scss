@@ -13,7 +13,7 @@
   font-family: "Oswald", sans-serif;
 
   &:disabled {
-    background: $bg_gray;
+    background: $bg-alternate;
     color: $text;
   }
 }

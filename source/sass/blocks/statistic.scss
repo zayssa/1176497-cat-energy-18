@@ -19,3 +19,7 @@
   line-height: 24px;
   font-family: "Oswald", sans-serif;
 }
+
+.statistic__list {
+  @include reset-list;
+}

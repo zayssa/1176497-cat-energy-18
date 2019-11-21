@@ -1,27 +1,26 @@
 @import "node_modules/normalize.css/normalize";
 @import "-variables";
+@import "-mixins";
 @import "-utilities";
-@import "header";
-@import "nav";
-@import "main-page";
-@import "titlescreen";
-@import "button";
-@import "categories";
-@import "category-card";
-@import "howitworks";
-@import "example";
-@import "statistic";
-@import "toggler";
-@import "contacts";
-@import "footer";
-@import "category-page";
-@import "products";
-@import "params";
-@import "more";
+@import "global";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/contacts";
+@import "blocks/socials";
+@import "blocks/footer";
 
-body {
-  color: $text;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", "Helvetica", sans-serif;
-}
+@import "forms/button";
+@import "forms/toggler";
+
+@import "blocks/main-page";
+@import "blocks/titlescreen";
+@import "blocks/categories";
+@import "blocks/category-card";
+@import "blocks/howitworks";
+@import "blocks/example";
+@import "blocks/statistic";
+@import "blocks/category-page";
+@import "blocks/products";
+@import "blocks/params";
+@import "blocks/more";
+@import "blocks/additional";
