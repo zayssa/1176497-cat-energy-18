@@ -1,11 +1,27 @@
 .footer {
+  padding: 39px 20px 31px 20px;
   background: $bg-alternate;
 }
 
+.footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto 31px auto;
+}
+
+.footer__socials {
+  padding: 22px 0 21px 0;
+  border-top: 1px solid rgba($text, 0.1);
+}
+
 .footer__madeby {
+  padding-top: 31px;
+  border-top: 1px solid rgba($text, 0.1);
   color: $headers;
   font-size: 16px;
   line-height: 16px;
+  position: relative;
 
   a {
     color: inherit;
@@ -16,7 +32,11 @@
       content: "";
       width: 27px;
       height: 34px;
+      margin-top: -25px;
       background: url("../img/htmlacademy.svg") no-repeat 0 0;
+      background-size: 100%;
+      position: absolute;
+      right: 0;
     }
   }
 }
