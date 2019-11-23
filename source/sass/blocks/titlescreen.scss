@@ -1,0 +1,18 @@
+.titlescreen__text {
+  background: $color url("../img/index-background-mobile@1x.jpg");
+  color: #ffffff;
+}
+
+.titlescreen__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.titlescreen__description {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}

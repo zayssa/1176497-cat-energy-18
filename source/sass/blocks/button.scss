@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  margin: 0;
+  padding: 11px;
+  border: none;
+  background: $color;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+
+  &:disabled {
+    background: $bg-alternate;
+    color: $text;
+  }
+}

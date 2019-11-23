@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML Academy: Кэт энерджи</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__logo">
+      <a href="./index.html" class="header__logo">
         <img
-          src="https://via.placeholder.com/191x39"
+          src="./img/logo-mobile.svg"
           alt="Логотип CatEnergy"
           title="Логотип CatEnergy"
           width="191"
@@ -19,7 +24,15 @@
       </a>
       <div class="header__nav">
         <nav class="nav">
-          <button class="nav__trigger" title="Навигация"></button>
+          <button class="nav__trigger" title="Навигация">
+            <img
+              src="./img/icon-mobile-menu.svg"
+              alt="Меню"
+              title="Меню"
+              width="25"
+              height="19"
+            />
+          </button>
         </nav>
       </div>
     </header>
@@ -28,7 +41,7 @@
       <ul class="category-page__list products">
         <li class="products__item">
           <img
-            src="https://via.placeholder.com/140x144"
+            src="./img/chicken-small-mobile@1x.jpg"
             alt="Cat Energy PRO 500 г"
             title="Cat Energy PRO 500 г"
             width="140"
@@ -57,7 +70,7 @@
         </li>
         <li class="products__item">
           <img
-            src="https://via.placeholder.com/140x144"
+            src="./img/chicken-big-mobile@1x.jpg"
             alt="Cat Energy PRO 1000 г"
             title="Cat Energy PRO 1000 г"
             width="140"
@@ -86,7 +99,7 @@
         </li>
         <li class="products__item">
           <img
-            src="https://via.placeholder.com/140x144"
+            src="./img/fish-small-mobile@1x.jpg"
             alt="Cat Energy PRO 500 г"
             title="Cat Energy PRO 500 г"
             width="140"
@@ -115,7 +128,7 @@
         </li>
         <li class="products__item">
           <img
-            src="https://via.placeholder.com/140x144"
+            src="./img/fish-big-mobile@1x.jpg"
             alt="Cat Energy PRO 1000 г"
             title="Cat Energy PRO 1000 г"
             width="140"
@@ -144,7 +157,7 @@
         </li>
         <li class="products__item">
           <img
-            src="https://via.placeholder.com/140x144"
+            src="./img/buckwheat-small-mobile@1x.jpg"
             alt="Cat Energy SLIM 500 г"
             title="Cat Energy SLIM 500 г"
             width="140"
@@ -173,7 +186,7 @@
         </li>
         <li class="products__item">
           <img
-            src="https://via.placeholder.com/140x144"
+            src="./img/buckwheat-big-mobile@1x.jpg"
             alt="Cat Energy SLIM 1000 г"
             title="Cat Energy SLIM 1000 г"
             width="140"
@@ -202,7 +215,7 @@
         </li>
         <li class="products__item">
           <img
-            src="https://via.placeholder.com/140x144"
+            src="./img/rice-small-mobile@1x.jpg"
             alt="Cat Energy SLIM 500 г"
             title="Cat Energy SLIM 500 г"
             width="140"
@@ -232,7 +245,7 @@
       </ul>
       <div class="category-page__more more">
         <img
-          src="https://via.placeholder.com/31x31"
+          src="./img/icon-plus-mobile.svg"
           alt="Плюс"
           title="Плюс"
           width="31"
@@ -241,7 +254,9 @@
         />
         <p class="more__count">Показать еще 100500 товаров</p>
         <p class="more__notice">На самом деле вкусов гораздо больше!</p>
-        <button class="more__button button" type="button">Показать все</button>
+        <button class="more__button button" type="button" disabled
+          >Показать все</button
+        >
       </div>
       <section class="category-page__additional additional">
         <h2 class="additional__title">Дополнительные товары</h2>
@@ -280,17 +295,20 @@
           </li>
         </ul>
       </section>
-      <div class="category-page__banner banner">
-        <img
-          src="https://via.placeholder.com/56x61"
-          alt="Подарок"
-          title="Подарок"
-          width="56"
-          height="61"
-        />
-        <span class="banner__gift">
-          Закажите все и получите чехол для кота в подарок!
-        </span>
+      <div class="category-page__banner">
+        <div class="banner">
+          <img
+            src="./img/icon-gift.svg"
+            alt="Подарок"
+            title="Подарок"
+            width="56"
+            height="61"
+            class="banner__icon"
+          />
+          <span class="banner__gift">
+            Закажите все и получите чехол для кота в подарок!
+          </span>
+        </div>
       </div>
     </main>
     <section class="contacts">
@@ -298,12 +316,29 @@
       <p class="contacts__address">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
-      <div class="contacts__map"></div>
+      <div class="contacts__map map">
+        <img
+          src="./img/bg-map-mobile@1x.png"
+          alt="Карта"
+          title="Карта"
+          width="320"
+          height="400"
+          class="map__map"
+        />
+        <img
+          src="./img/map-pin.png"
+          alt="Маркер"
+          title="Маркер"
+          width="55"
+          height="53"
+          class="map__map"
+        />
+      </div>
     </section>
     <footer class="footer">
-      <a href="#" class="footer__logo">
+      <a href="./index.html" class="footer__logo">
         <img
-          src="https://via.placeholder.com/128x24"
+          src="./img/logo-footer.svg"
           alt="Логотип CatEnergy"
           title="Логотип CatEnergy"
           width="128"
@@ -315,7 +350,7 @@
           <li class="socials__item">
             <a href="#">
               <img
-                src="https://via.placeholder.com/22x12"
+                src="./img/icon-vk.svg"
                 alt="CatEnergy ВКонтакте"
                 title="CatEnergy ВКонтакте"
                 width="22"
@@ -326,7 +361,7 @@
           <li class="socials__item">
             <a href="#">
               <img
-                src="https://via.placeholder.com/17x17"
+                src="./img/icon-insta.svg"
                 alt="CatEnergy в Instargam"
                 title="CatEnergy в Instargam"
                 width="17"
@@ -337,7 +372,7 @@
           <li class="socials__item">
             <a href="#">
               <img
-                src="https://via.placeholder.com/10x19"
+                src="./img/icon-fb.svg"
                 alt="CatEnergy в Facebook"
                 title="CatEnergy в Facebook"
                 width="10"
