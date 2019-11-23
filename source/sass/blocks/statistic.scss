@@ -1,0 +1,25 @@
+.statistic__item {
+  &--inline {
+    color: $headers;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+.statistic__label {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.statistic__value {
+  color: $headers;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+}
+
+.statistic__list {
+  @include reset-list;
+}

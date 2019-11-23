@@ -1,0 +1,20 @@
+.more {
+  text-align: center;
+}
+
+.more__plus {
+  opacity: 0.2;
+}
+
+.more__count {
+  color: $headers;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+.more__notice {
+  font-size: 12px;
+  line-height: 16px;
+}
