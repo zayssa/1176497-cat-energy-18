@@ -40,3 +40,37 @@
     }
   }
 }
+
+@media (min-width: $tablet) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__socials {
+    padding: 0;
+    border: none;
+  }
+
+  .footer__madeby {
+    padding: 0;
+    border: none;
+
+    a {
+      display: flex;
+      align-items: center;
+
+      &::after {
+        margin-top: 0;
+        margin-left: 23px;
+        position: static;
+        right: 0;
+      }
+    }
+  }
+}

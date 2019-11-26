@@ -20,3 +20,10 @@
 .titlescreen__button {
   padding: 0 20px;
 }
+
+@media (min-width: $tablet) {
+  .titlescreen__text {
+    background: none;
+    color: $headers;
+  }
+}

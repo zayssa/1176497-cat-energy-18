@@ -7,3 +7,9 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet) {
+  .params__value {
+    text-align: right;
+  }
+}

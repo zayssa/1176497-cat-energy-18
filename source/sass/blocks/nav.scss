@@ -1,7 +1,22 @@
+.nav__list {
+  display: none;
+}
+
 .nav__trigger {
   display: block;
   margin: 0;
   padding: 0;
   border: none;
   background: none;
+}
+
+@media (min-width: $tablet) {
+  .nav__trigger {
+    display: none;
+  }
+
+  .nav__list {
+    @include reset-list;
+    display: flex;
+  }
 }

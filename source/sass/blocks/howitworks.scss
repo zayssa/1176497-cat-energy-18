@@ -15,3 +15,21 @@
 .howitworks__list {
   @include reset-list;
 }
+
+@media (max-width: $tablet) {
+  .howitworks__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .howitworks__item {
+    flex: 0 0 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+
+    &:nth-child(2n) {
+      padding-right: 0;
+      padding-left: 30px;
+    }
+  }
+}
