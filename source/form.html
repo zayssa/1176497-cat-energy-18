@@ -13,215 +13,228 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html" class="header__logo">
-        <img
-          src="./img/logo-mobile.svg"
-          alt="Логотип CatEnergy"
-          title="Логотип CatEnergy"
-          width="191"
-          height="39"
-        />
-      </a>
-      <div class="header__nav">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="./index.html">Главная</a></li>
-            <li class="nav__item"><a href="#">Каталог продукции</a></li>
-            <li class="nav__item"><span>Подбор программы</span></li>
-          </ul>
-          <button class="nav__trigger" title="Навигация">
-            <img
-              src="./img/icon-mobile-menu.svg"
-              alt="Меню"
-              title="Меню"
-              width="25"
-              height="19"
-            />
-          </button>
-        </nav>
+      <div class="wrapper">
+        <a href="./index.html" class="header__logo">
+          <img
+            src="./img/logo-mobile.svg"
+            alt="Логотип CatEnergy"
+            title="Логотип CatEnergy"
+            width="191"
+            height="39"
+          />
+        </a>
+        <div class="header__nav">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="./index.html">Главная</a></li>
+              <li class="nav__item"><a href="#">Каталог продукции</a></li>
+              <li class="nav__item"><span>Подбор программы</span></li>
+            </ul>
+            <button class="nav__trigger" title="Навигация">
+              <img
+                src="./img/icon-mobile-menu.svg"
+                alt="Меню"
+                title="Меню"
+                width="25"
+                height="19"
+              />
+            </button>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="order-page">
-      <h1 class="order-page__title">Подбор программы</h1>
-      <form
-        action="https://echo.htmlacademy.ru"
-        method="post"
-        class="order-page__form"
-      >
-        <section class="order-page__section form-section">
-          <h2 class="visually-hidden">Базовая информация</h2>
-          <p class="form-section__notice">
-            Заполните анкету и мы подберем программу питания для вашего кота
-          </p>
-          <div class="form-section__field text-field">
-            <label for="name" class="text-field__label">Имя:*</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="text-field__input"
-              required
-            />
-          </div>
-          <div class="form-section__field text-field">
-            <label for="weight" class="text-field__label">Вес (кг):*</label>
-            <input
-              type="text"
-              name="weight"
-              id="weight"
-              class="text-field__input"
-              required
-            />
-          </div>
-          <div class="form-section__field text-field">
-            <label for="age" class="text-field__label">Возраст (лет):</label>
-            <input type="text" name="age" id="age" class="text-field__input" />
-          </div>
-          <fieldset class="form-section__fieldset radio-group">
-            <legend class="visually-hidden">
-              Цель
-            </legend>
-            <div class="radio-group__item">
+      <div class="wrapper">
+        <h1 class="order-page__title">Подбор программы</h1>
+        <form
+          action="https://echo.htmlacademy.ru"
+          method="post"
+          class="order-page__form"
+        >
+          <section class="order-page__section form-section">
+            <h2 class="visually-hidden">Базовая информация</h2>
+            <p class="form-section__notice">
+              Заполните анкету и мы подберем программу питания для вашего кота
+            </p>
+            <div class="form-section__field text-field">
+              <label for="name" class="text-field__label">Имя:*</label>
               <input
-                type="radio"
-                name="target"
-                value="1"
-                id="target1"
-                class="radio-group__input"
+                type="text"
+                name="name"
+                id="name"
+                class="text-field__input"
+                required
               />
-              <label for="target1" class="radio-group__label">Похудение</label>
             </div>
-            <div class="radio-group__item">
+            <div class="form-section__field text-field">
+              <label for="weight" class="text-field__label">Вес (кг):*</label>
               <input
-                type="radio"
-                name="target"
-                value="2"
-                id="target2"
-                class="radio-group__input"
+                type="text"
+                name="weight"
+                id="weight"
+                class="text-field__input"
+                required
               />
-              <label for="target2" class="radio-group__label">
-                Набор массы
-              </label>
             </div>
-            <div class="radio-group__item">
+            <div class="form-section__field text-field">
+              <label for="age" class="text-field__label">Возраст (лет):</label>
               <input
-                type="radio"
-                name="target"
-                value="3"
-                id="target3"
-                class="radio-group__input"
+                type="text"
+                name="age"
+                id="age"
+                class="text-field__input"
               />
-              <label for="target3" class="radio-group__label">
-                Не знаю (Нужен ваш совет)
-              </label>
             </div>
-          </fieldset>
-        </section>
-        <section class="order-page__section form-section">
-          <h2 class="form-section__title">
-            Контактные данные (владельца кота)
-          </h2>
-          <div class="form-section__field text-field">
-            <label for="email" class="text-field__label">E-mail:*</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="text-field__input text-field__input--email"
-              required
-            />
-          </div>
-          <div class="form-section__field text-field">
-            <label for="phone" class="text-field__label">Телефон:*</label>
-            <input
-              type="phone"
-              name="phone"
-              id="phone"
-              class="text-field__input text-field__input--phone"
-              required
-            />
-          </div>
-        </section>
-        <section class="order-page__section form-section">
-          <h2 class="form-section__title">
-            Комментарий
-          </h2>
-          <div class="form-section__field text-field">
-            <textarea
-              name="comment"
-              cols="30"
-              rows="10"
-              class="text-field__input text-field__input--textarea"
-              placeholder="Расскажите обо всех повадках кота"
-            ></textarea>
-          </div>
-        </section>
-        <section class="order-page__section form-section">
-          <h2 class="form-section__title">
-            Дополнительно
-          </h2>
-          <fieldset class="form-section__fieldset checkbox-group">
-            <legend class="visually-hidden">
-              Добавки
-            </legend>
-            <div class="checkbox-group__item">
+            <fieldset class="form-section__fieldset radio-group">
+              <legend class="visually-hidden">
+                Цель
+              </legend>
+              <div class="radio-group__item">
+                <input
+                  type="radio"
+                  name="target"
+                  value="1"
+                  id="target1"
+                  class="radio-group__input"
+                />
+                <label for="target1" class="radio-group__label"
+                  >Похудение</label
+                >
+              </div>
+              <div class="radio-group__item">
+                <input
+                  type="radio"
+                  name="target"
+                  value="2"
+                  id="target2"
+                  class="radio-group__input"
+                />
+                <label for="target2" class="radio-group__label">
+                  Набор массы
+                </label>
+              </div>
+              <div class="radio-group__item">
+                <input
+                  type="radio"
+                  name="target"
+                  value="3"
+                  id="target3"
+                  class="radio-group__input"
+                />
+                <label for="target3" class="radio-group__label">
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+            </fieldset>
+          </section>
+          <section class="order-page__section form-section">
+            <h2 class="form-section__title">
+              Контактные данные (владельца кота)
+            </h2>
+            <div class="form-section__field text-field">
+              <label for="email" class="text-field__label">E-mail:*</label>
               <input
-                type="checkbox"
-                name="additional1"
-                id="additional1"
-                class="checkbox-group__input"
+                type="email"
+                name="email"
+                id="email"
+                class="text-field__input text-field__input--email"
+                required
               />
-              <label for="additional1" class="checkbox-group__label">
-                Сахарозаменитель
-              </label>
             </div>
-            <div class="checkbox-group__item">
+            <div class="form-section__field text-field">
+              <label for="phone" class="text-field__label">Телефон:*</label>
               <input
-                type="checkbox"
-                name="additional2"
-                id="additional2"
-                class="checkbox-group__input"
+                type="phone"
+                name="phone"
+                id="phone"
+                class="text-field__input text-field__input--phone"
+                required
               />
-              <label for="additional2" class="checkbox-group__label">
-                Питьевая вода
-              </label>
             </div>
-            <div class="checkbox-group__item">
-              <input
-                type="checkbox"
-                name="additional3"
-                id="additional3"
-                class="checkbox-group__input"
-              />
-              <label for="additional3" class="checkbox-group__label">
-                Молоко
-              </label>
+          </section>
+          <section class="order-page__section form-section">
+            <h2 class="form-section__title">
+              Комментарий
+            </h2>
+            <div class="form-section__field text-field">
+              <textarea
+                name="comment"
+                cols="30"
+                rows="10"
+                class="text-field__input text-field__input--textarea"
+                placeholder="Расскажите обо всех повадках кота"
+              ></textarea>
             </div>
-            <div class="checkbox-group__item">
-              <input
-                type="checkbox"
-                name="additional4"
-                id="additional4"
-                class="checkbox-group__input"
-              />
-              <label for="additional4" class="checkbox-group__label">
-                Витамины
-              </label>
-            </div>
-          </fieldset>
-        </section>
-        <button type="submit" class="order-page__submit button">
-          Отправить заявку
-        </button>
-        <div class="order-page__info">* — Обязательные поля</div>
-      </form>
+          </section>
+          <section class="order-page__section form-section">
+            <h2 class="form-section__title">
+              Дополнительно
+            </h2>
+            <fieldset class="form-section__fieldset checkbox-group">
+              <legend class="visually-hidden">
+                Добавки
+              </legend>
+              <div class="checkbox-group__item">
+                <input
+                  type="checkbox"
+                  name="additional1"
+                  id="additional1"
+                  class="checkbox-group__input"
+                />
+                <label for="additional1" class="checkbox-group__label">
+                  Сахарозаменитель
+                </label>
+              </div>
+              <div class="checkbox-group__item">
+                <input
+                  type="checkbox"
+                  name="additional2"
+                  id="additional2"
+                  class="checkbox-group__input"
+                />
+                <label for="additional2" class="checkbox-group__label">
+                  Питьевая вода
+                </label>
+              </div>
+              <div class="checkbox-group__item">
+                <input
+                  type="checkbox"
+                  name="additional3"
+                  id="additional3"
+                  class="checkbox-group__input"
+                />
+                <label for="additional3" class="checkbox-group__label">
+                  Молоко
+                </label>
+              </div>
+              <div class="checkbox-group__item">
+                <input
+                  type="checkbox"
+                  name="additional4"
+                  id="additional4"
+                  class="checkbox-group__input"
+                />
+                <label for="additional4" class="checkbox-group__label">
+                  Витамины
+                </label>
+              </div>
+            </fieldset>
+          </section>
+          <button type="submit" class="order-page__submit button">
+            Отправить заявку
+          </button>
+          <div class="order-page__info">* — Обязательные поля</div>
+        </form>
+      </div>
     </main>
     <section class="contacts">
-      <div class="contacts__joinus">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </p>
+      <div class="wrapper">
+        <div class="contacts__joinus">
+          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+          <p class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
       </div>
       <div class="contacts__map map">
         <img
@@ -238,61 +251,63 @@
           title="Маркер"
           width="55"
           height="53"
-          class="map__map"
+          class="map__marker"
         />
       </div>
     </section>
     <footer class="footer">
-      <a href="./index.html" class="footer__logo">
-        <img
-          src="./img/logo-footer.svg"
-          alt="Логотип CatEnergy"
-          title="Логотип CatEnergy"
-          width="128"
-          height="24"
-        />
-      </a>
-      <div class="footer__socials socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a href="#">
-              <img
-                src="./img/icon-vk.svg"
-                alt="CatEnergy ВКонтакте"
-                title="CatEnergy ВКонтакте"
-                width="22"
-                height="12"
-              />
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#">
-              <img
-                src="./img/icon-insta.svg"
-                alt="CatEnergy в Instargam"
-                title="CatEnergy в Instargam"
-                width="17"
-                height="17"
-              />
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="#">
-              <img
-                src="./img/icon-fb.svg"
-                alt="CatEnergy в Facebook"
-                title="CatEnergy в Facebook"
-                width="10"
-                height="19"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__madeby">
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
-          >HTML Academy</a
-        >
+      <div class="wrapper">
+        <a href="./index.html" class="footer__logo">
+          <img
+            src="./img/logo-footer.svg"
+            alt="Логотип CatEnergy"
+            title="Логотип CatEnergy"
+            width="128"
+            height="24"
+          />
+        </a>
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#">
+                <img
+                  src="./img/icon-vk.svg"
+                  alt="CatEnergy ВКонтакте"
+                  title="CatEnergy ВКонтакте"
+                  width="22"
+                  height="12"
+                />
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <img
+                  src="./img/icon-insta.svg"
+                  alt="CatEnergy в Instargam"
+                  title="CatEnergy в Instargam"
+                  width="17"
+                  height="17"
+                />
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#">
+                <img
+                  src="./img/icon-fb.svg"
+                  alt="CatEnergy в Facebook"
+                  title="CatEnergy в Facebook"
+                  width="10"
+                  height="19"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__madeby">
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+            >HTML Academy</a
+          >
+        </div>
       </div>
     </footer>
   </body>
