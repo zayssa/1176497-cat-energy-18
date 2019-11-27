@@ -10,9 +10,11 @@
   justify-content: inherit;
   width: 280px;
   margin: auto;
+
   @media (min-width: $tablet) {
     width: 708px;
   }
+
   @media (min-width: $desktop) {
     width: 1220px;
   }
