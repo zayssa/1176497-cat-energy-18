@@ -12,3 +12,7 @@
   height: 1px;
   margin: -1px;
 }
+
+@mixin font-family {
+  font-family: "Oswald", sans-serif;
+}

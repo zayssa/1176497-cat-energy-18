@@ -8,13 +8,15 @@
   line-height: 36px;
   font-weight: normal;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
 }
 
 .titlescreen__description {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
 }
 
 .titlescreen__button {

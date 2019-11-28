@@ -2,6 +2,24 @@
   display: none;
 }
 
+.nav__item {
+  margin-left: 37px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  @include font-family;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.nav__active {
+  border-bottom: 2px solid $color;
+}
+
 .nav__trigger {
   display: block;
   margin: 0;

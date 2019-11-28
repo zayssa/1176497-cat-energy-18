@@ -4,7 +4,8 @@
   line-height: 37px;
   font-weight: normal;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
 }
 
 .category-card__image {
@@ -20,7 +21,8 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
 
   &::after {
     display: inline-block;

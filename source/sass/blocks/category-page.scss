@@ -3,7 +3,8 @@
   font-size: 36px;
   line-height: 37px;
   font-weight: normal;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
 }
 
 .category-page__list {

@@ -11,7 +11,8 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
 }
 
 .contacts__address {
