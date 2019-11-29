@@ -1,3 +1,21 @@
 .visually-hidden {
   @include visually-hidden;
 }
+
+.wrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  width: 280px;
+  margin: auto;
+
+  @media (min-width: $tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+  }
+}

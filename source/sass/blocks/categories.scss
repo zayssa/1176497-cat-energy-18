@@ -1,7 +1,18 @@
+.categories__list {
+  @include reset-list;
+}
+
 .categories__item {
   background: $bg-alternate;
 }
 
-.categories__list {
-  @include reset-list;
+@media (min-width: $desktop) {
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    flex: 0 0 570px;
+  }
 }

@@ -1,17 +1,67 @@
 .howitworks__title {
+  margin: 0 0 35px 0;
+  padding: 0;
   color: $headers;
   font-size: 36px;
   line-height: 38px;
   font-weight: normal;
-  font-family: "Oswald", sans-serif;
-}
 
-.howitworks__image {
-  width: 60px;
-  height: 60px;
-  background: $color;
+  @include font-family;
 }
 
 .howitworks__list {
   @include reset-list;
+}
+
+.howitworks__item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.howitworks__image {
+  flex: 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background: $color;
+}
+
+.howitworks__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet) {
+  .howitworks__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .howitworks__item {
+    flex: 0 0 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+
+    @media (max-width: calc(#{$desktop} - 1px)) {
+      &:nth-child(2n) {
+        padding-right: 0;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .howitworks__list {
+    justify-content: space-between;
+  }
+
+  .howitworks__item {
+    flex: 0 0 245px;
+    display: block;
+    padding: 0;
+  }
 }

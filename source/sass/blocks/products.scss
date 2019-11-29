@@ -1,7 +1,50 @@
+.products__illustration {
+  float: left;
+}
+
 .products__name {
   color: $headers;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
+}
+
+.products__button {
+  clear: both;
+}
+
+@media (min-width: $tablet) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .products__item {
+    flex: 0 0 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .products__illustration {
+    align-self: center;
+  }
+
+  .products__name {
+    text-align: center;
+  }
+
+  .products__more {
+    flex: 0 0 324px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .products__item,
+  .products__more {
+    flex: 0 0 245px;
+  }
 }

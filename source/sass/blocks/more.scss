@@ -11,7 +11,8 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+
+  @include font-family;
 }
 
 .more__notice {
