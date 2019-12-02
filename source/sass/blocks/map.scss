@@ -10,3 +10,9 @@
   bottom: 0;
   left: 0;
 }
+
+@media (min-width: $desktop) {
+  .map__marker {
+    left: 50%;
+  }
+}
