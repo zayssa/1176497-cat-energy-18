@@ -1,5 +1,6 @@
 .contacts__joinus {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 31px 0 26px 0;
 }
@@ -18,4 +19,36 @@
 .contacts__address {
   margin: 0;
   line-height: 20px;
+}
+
+@media (min-width: $tablet) {
+  .contacts__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__joinus {
+    width: 570px;
+    padding: 66px 90px 59px 76px;
+    background: #ffffff;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
 }

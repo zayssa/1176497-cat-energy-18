@@ -6,3 +6,10 @@
 
   @include font-family;
 }
+
+@media (min-width: $tablet) {
+  .order-page__wrapper {
+    padding-right: 37px;
+    padding-left: 40px;
+  }
+}

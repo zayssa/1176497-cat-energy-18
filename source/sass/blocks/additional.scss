@@ -29,3 +29,68 @@
   font-size: 14px;
   line-height: 14px;
 }
+
+@media (min-width: $tablet) {
+  .additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 28px 37px 28px 38px;
+    border: 1px solid rgba($input-border, 0.5);
+
+    & + & {
+      border-top: none;
+    }
+  }
+
+  .additional__name {
+    flex: 1;
+  }
+
+  .additional__price {
+    flex: 0 0 94px;
+    text-align: right;
+  }
+
+  .additional__button {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .additional__flex {
+    display: flex;
+  }
+
+  .additional__list {
+    flex: 1;
+  }
+
+  .additional__item {
+    align-items: center;
+    padding: 15px 0 16px 0;
+    border-color: $input-border;
+    border-right: none;
+    border-left: none;
+  }
+
+  .additional__value {
+    flex: 1;
+  }
+
+  .additional__price {
+    flex: 0 0 80px;
+    text-align: left;
+  }
+
+  .additional__button {
+    flex: 0 0 245px;
+    margin-top: 0;
+  }
+
+  .additional__banner {
+    flex: 0 0 245px;
+    margin-left: 80px;
+  }
+}

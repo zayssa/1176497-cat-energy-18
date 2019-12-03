@@ -21,3 +21,25 @@
   padding: 0;
   border: none;
 }
+
+@media (min-width: $tablet) {
+  .form-section__fieldset--radio {
+    padding: 25px 28px;
+    border: 1px solid rgba($input-border, 0.5);
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-section__flex {
+    display: flex;
+
+    > * {
+      flex: 1;
+      margin-left: 80px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

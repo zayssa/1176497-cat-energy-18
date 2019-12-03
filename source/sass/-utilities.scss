@@ -19,3 +19,9 @@
     width: 1220px;
   }
 }
+
+@media (max-width: calc(#{$tablet} - 1px)) {
+  .mobile-hidden {
+    display: none;
+  }
+}

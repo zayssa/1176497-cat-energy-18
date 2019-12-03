@@ -1,4 +1,7 @@
 .toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $headers;
   font-size: 16px;
   line-height: 20px;
