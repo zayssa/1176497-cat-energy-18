@@ -1,3 +1,7 @@
+.text-field {
+  display: flex;
+}
+
 .text-field__label {
   color: $headers;
   font-size: 16px;
@@ -8,6 +12,7 @@
 }
 
 .text-field__input {
+  flex: 1px;
   border: 1px solid rgba($input-border, 0.5);
   color: $headers;
   font-size: 16px;

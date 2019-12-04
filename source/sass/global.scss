@@ -4,3 +4,10 @@ body {
   line-height: 18px;
   font-family: "Arial", "Helvetica", sans-serif;
 }
+
+@media (min-width: $tablet) {
+  body {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

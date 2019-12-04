@@ -11,3 +11,48 @@
   margin-right: -20px;
   margin-left: -20px;
 }
+
+@media (min-width: $tablet) {
+  .example__illustration {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example {
+    margin-top: 130px;
+  }
+
+  .example .wrapper {
+    position: relative;
+  }
+
+  .example__title {
+    position: absolute;
+    top: -130px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .example__info {
+    flex: 0 0 430px;
+  }
+
+  .example__progress {
+    flex: 0 0 560px;
+    position: relative;
+  }
+
+  .example__illustration {
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+  }
+}

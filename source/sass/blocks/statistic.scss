@@ -25,3 +25,38 @@
 .statistic__list {
   @include reset-list;
 }
+
+@media (min-width: $tablet) {
+  .statistic__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .statistic__item {
+    margin-right: 42px;
+
+    &--inline {
+      flex: 1;
+      margin-right: 0;
+      text-align: right;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .statistic__list {
+    flex-wrap: wrap;
+  }
+
+  .statistic__item {
+    &--inline {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 0;
+    }
+  }
+}
