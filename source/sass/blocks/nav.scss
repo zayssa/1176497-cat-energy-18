@@ -46,12 +46,17 @@
 @media (min-width: $desktop) {
   .nav__item {
     margin-left: 35px;
-    color: #ffffff;
     font-size: 20px;
     line-height: 25px;
   }
 
-  .nav__active {
-    border-color: #ffffff;
+  .index {
+    .nav__item {
+      color: #ffffff;
+    }
+
+    .nav__active {
+      border-color: #ffffff;
+    }
   }
 }
