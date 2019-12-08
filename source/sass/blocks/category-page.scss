@@ -1,4 +1,5 @@
 .category-page__title {
+  margin: 26px 0 41px 0;
   color: $headers;
   font-size: 36px;
   line-height: 37px;
@@ -9,4 +10,18 @@
 
 .category-page__list {
   @include reset-list;
+}
+
+@media (min-width: $tablet) {
+  .category-page__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .category-page__title {
+    margin-top: 17px;
+    margin-bottom: 38px;
+  }
 }
