@@ -3,10 +3,31 @@
 }
 
 .main-page__howitworks {
-  padding: 33px 0 42px 0;
+  padding: 8px 0 42px 0;
 }
 
 .main-page__example {
   padding: 33px 0 38px 0;
   background: $bg-alternate;
+}
+
+@media (min-width: $tablet) {
+  .main-page__categories {
+    margin-top: -10px;
+    padding: 0;
+  }
+
+  .main-page__howitworks {
+    padding-top: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-page__titlescreen {
+    min-height: 613px;
+  }
+
+  .main-page__howitworks {
+    padding-top: 42px;
+  }
 }

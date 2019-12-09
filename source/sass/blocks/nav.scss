@@ -37,4 +37,26 @@
     @include reset-list;
     display: flex;
   }
+
+  .nav__active {
+    padding-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .nav__item {
+    margin-left: 35px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .index {
+    .nav__item {
+      color: #ffffff;
+    }
+
+    .nav__active {
+      border-color: #ffffff;
+    }
+  }
 }

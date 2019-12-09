@@ -2,6 +2,10 @@
   @include visually-hidden;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .wrapper {
   flex-grow: 0;
   flex-shrink: 0;
@@ -22,6 +26,12 @@
 
 @media (max-width: calc(#{$tablet} - 1px)) {
   .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .mobile-only {
     display: none;
   }
 }

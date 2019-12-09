@@ -1,15 +1,36 @@
-.params__label {
+.params {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
   font-size: 12px;
   line-height: 16px;
+  overflow: hidden;
+}
+
+.params__label {
+  padding: 0;
 }
 
 .params__value {
-  font-size: 12px;
-  line-height: 16px;
+  padding: 0;
+  text-align: right;
 }
 
 @media (min-width: $tablet) {
+  .params {
+    margin-top: 19px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .params__label {
+    padding: 8px 0 7px 0;
+    border-bottom: 1px solid $input-border;
+  }
+
   .params__value {
+    padding: 7px 0;
+    border-bottom: 1px solid $input-border;
     text-align: right;
   }
 }
