@@ -1,4 +1,6 @@
 .additional__title {
+  margin: 0 0 33px 0;
+  padding: 0;
   color: $headers;
   font-size: 24px;
   line-height: 25px;
@@ -8,10 +10,22 @@
 }
 
 .additional__list {
+  border-bottom: 1px solid $input-border;
+
   @include reset-list;
 }
 
+.additional__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 13px 0 17px 0;
+  border-top: 1px solid $input-border;
+}
+
 .additional__name {
+  flex: 0 0 100%;
+  margin-bottom: 13px;
   color: $headers;
   font-size: 16px;
   line-height: 16px;
@@ -21,6 +35,7 @@
 }
 
 .additional__value {
+  margin-bottom: 15px;
   font-size: 14px;
   line-height: 14px;
 }
@@ -30,11 +45,30 @@
   line-height: 14px;
 }
 
+.additional__button {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.additional__banner {
+  margin-top: 39px;
+}
+
 @media (min-width: $tablet) {
+  .additional__title {
+    margin: 26px 0 80px 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional__list {
+    border: none;
+  }
+
   .additional__item {
     display: flex;
     flex-wrap: wrap;
-    padding: 28px 37px 28px 38px;
+    padding: 29px 37px 27px 38px;
     border: 1px solid rgba($input-border, 0.5);
 
     & + & {
@@ -44,21 +78,40 @@
 
   .additional__name {
     flex: 1;
+    margin-top: -4px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional__value {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional__price {
     flex: 0 0 94px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
   }
 
   .additional__button {
     flex: 0 0 100%;
     box-sizing: border-box;
-    margin-top: 26px;
+    margin-top: 7px;
+  }
+
+  .additional__banner {
+    margin-top: 69px;
   }
 }
 
 @media (min-width: $desktop) {
+  .additional__title {
+    margin-top: 36px;
+    margin-left: -2px;
+  }
+
   .additional__flex {
     display: flex;
   }
@@ -75,12 +128,20 @@
     border-left: none;
   }
 
+  .additional__name {
+    margin-top: 0;
+    margin-bottom: -2px;
+  }
+
   .additional__value {
     flex: 1;
+    max-width: 245px;
+    margin-bottom: -7px;
   }
 
   .additional__price {
     flex: 0 0 80px;
+    margin-bottom: -7px;
     text-align: left;
   }
 
@@ -91,6 +152,7 @@
 
   .additional__banner {
     flex: 0 0 245px;
+    margin-top: 0;
     margin-left: 80px;
   }
 }

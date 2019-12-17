@@ -158,7 +158,9 @@
               </section>
               <section class="order-page__section form-section">
                 <h2 class="form-section__title">
-                  Контактные данные (владельца кота)
+                  <span class="lined-heading">
+                    Контактные данные (владельца кота)
+                  </span>
                 </h2>
                 <div class="form-section__flex">
                   <div class="form-section__field text-field">
@@ -169,7 +171,7 @@
                       type="email"
                       name="email"
                       id="email"
-                      class="text-field__input text-field__input--email"
+                      class="text-field__input text-field__input--iconed text-field__input--email"
                       required
                     />
                   </div>
@@ -181,7 +183,7 @@
                       type="phone"
                       name="phone"
                       id="phone"
-                      class="text-field__input text-field__input--phone"
+                      class="text-field__input text-field__input--iconed text-field__input--phone"
                       required
                     />
                   </div>
@@ -189,13 +191,15 @@
               </section>
               <section class="order-page__section form-section">
                 <h2 class="form-section__title">
-                  Комментарий
+                  <span class="lined-heading">
+                    Комментарий
+                  </span>
                 </h2>
                 <div class="form-section__field text-field">
                   <textarea
                     name="comment"
                     cols="30"
-                    rows="10"
+                    rows="7"
                     class="text-field__input text-field__input--textarea"
                     placeholder="Расскажите обо всех повадках кота"
                   ></textarea>
@@ -203,7 +207,9 @@
               </section>
               <section class="order-page__section form-section">
                 <h2 class="form-section__title">
-                  Дополнительно
+                  <span class="lined-heading">
+                    Дополнительно
+                  </span>
                 </h2>
                 <fieldset
                   class="form-section__fieldset form-section__fieldset--checkbox checkbox-group"
@@ -211,7 +217,9 @@
                   <legend class="visually-hidden">
                     Добавки
                   </legend>
-                  <div class="form-section__flex">
+                  <div
+                    class="form-section__flex form-section__flex--checkboxes"
+                  >
                     <div class="checkbox-group__item">
                       <input
                         type="checkbox"
@@ -259,7 +267,7 @@
                   </div>
                 </fieldset>
               </section>
-              <div class="form-section__flex">
+              <div class="order-page__bottom">
                 <button type="submit" class="order-page__submit button">
                   Отправить заявку
                 </button>

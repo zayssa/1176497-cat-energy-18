@@ -10,6 +10,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   display: inherit;
+  flex-wrap: inherit;
   align-items: inherit;
   justify-content: inherit;
   width: 280px;
@@ -24,6 +25,35 @@
   }
 }
 
+.lined-heading {
+  background: $bg;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 3px;
+    background: $color;
+    position: absolute;
+    top: 20px;
+    right: -3000px;
+    left: -3000px;
+    z-index: -2;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    background: $bg;
+    position: absolute;
+    top: 0;
+    right: -24px;
+    bottom: 0;
+    left: -24px;
+    z-index: -1;
+  }
+}
+
 @media (max-width: calc(#{$tablet} - 1px)) {
   .mobile-hidden {
     display: none;
@@ -33,5 +63,16 @@
 @media (min-width: $tablet) {
   .mobile-only {
     display: none;
+  }
+
+  .lined-heading {
+    &::before {
+      top: 31px;
+    }
+
+    &::after {
+      right: -39px;
+      left: -39px;
+    }
   }
 }

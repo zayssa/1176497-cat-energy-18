@@ -12,6 +12,10 @@
   @include reset-list;
 }
 
+.category-page__additional {
+  padding-top: 28px;
+}
+
 @media (min-width: $tablet) {
   .category-page__title {
     font-size: 60px;
