@@ -1,6 +1,11 @@
 .contacts {
   margin-top: 35px;
   background: $bg-alternate;
+
+  body.index & {
+    margin-top: 0;
+    background: none;
+  }
 }
 
 .contacts__joinus {
