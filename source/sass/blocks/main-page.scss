@@ -3,10 +3,59 @@
 }
 
 .main-page__howitworks {
-  padding: 33px 0 42px 0;
+  padding: 8px 0 6px 0;
 }
 
 .main-page__example {
-  padding: 33px 0 38px 0;
+  margin-top: 35px;
+  padding: 28px 0 36px 0;
   background: $bg-alternate;
+}
+
+@media (min-width: $tablet) {
+  .main-page__categories {
+    margin-top: -10px;
+    padding: 0;
+  }
+
+  .main-page__howitworks {
+    padding-top: 18px;
+  }
+
+  .main-page__example {
+    margin-top: -17px;
+    padding-top: 43px;
+    border-top: 1px solid $border;
+    background: none;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 462px;
+      background: $bg-alternate;
+      position: absolute;
+      right: 0;
+      bottom: -30px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-page__titlescreen {
+    min-height: 613px;
+  }
+
+  .main-page__howitworks {
+    padding-top: 42px;
+  }
+
+  .main-page__example {
+    padding-bottom: 70px;
+
+    &::before {
+      display: none;
+    }
+  }
 }

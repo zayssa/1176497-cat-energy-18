@@ -1,5 +1,20 @@
 .statistic__item {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 124px;
+  height: 56px;
+  margin-bottom: 34px;
+  border: 1px solid $input-border;
+  text-align: center;
+  border-radius: 3px;
+  box-sizing: border-box;
+
   &--inline {
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    border: none;
     color: $headers;
     font-size: 14px;
     line-height: 20px;
@@ -10,6 +25,9 @@
 }
 
 .statistic__label {
+  margin: 8px 18px -16px 18px;
+  padding: 0 5px;
+  background-color: $bg-alternate;
   font-size: 12px;
   line-height: 12px;
 }
@@ -18,26 +36,32 @@
   color: $headers;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 
   @include font-family;
 }
 
 .statistic__list {
   @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media (min-width: $tablet) {
-  .statistic__list {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .statistic__item {
+    width: 162px;
+    height: 72px;
     margin-right: 42px;
 
     &--inline {
       flex: 1;
+      height: auto;
+      margin-top: 6px;
       margin-right: 0;
+      font-size: 20px;
+      line-height: 30px;
       text-align: right;
 
       span {
@@ -45,18 +69,45 @@
       }
     }
   }
+
+  .statistic__label {
+    margin: 11px 10px -6px 10px;
+    padding: 0;
+    background-color: $bg;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .statistic__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 @media (min-width: $desktop) {
   .statistic__list {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .statistic__item {
+    margin-bottom: 55px;
+
     &--inline {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
-      margin-left: 0;
+      flex: 0 0 366px;
+      margin: 0;
+
+      span {
+        flex: 0 0 162px;
+        text-align: center;
+      }
     }
+  }
+
+  .statistic__label {
+    background-color: $bg-alternate;
   }
 }

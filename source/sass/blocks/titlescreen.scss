@@ -1,19 +1,32 @@
 .titlescreen__text {
-  background: $color url("../img/index-background-mobile@1x.jpg");
   color: #ffffff;
+  text-align: center;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 305px;
+    background: $color url("../img/index-background-mobile@1x.jpg") no-repeat
+      50% 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 .titlescreen__title {
+  margin: 0 0 23px 0;
+  padding: 27px 0 0 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
-  text-align: center;
 
   @include font-family;
 }
 
 .titlescreen__description {
-  text-align: center;
+  margin: 0 0 26px 0;
   text-transform: uppercase;
 
   @include font-family;
@@ -23,9 +36,83 @@
   padding: 0 0;
 }
 
-@media (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+@media (min-width: $tablet) {
+  .titlescreen {
+    display: flex;
+    flex-direction: column;
+  }
+
   .titlescreen__text {
-    background: none;
+    padding: 2px 0 25px 87px;
     color: $headers;
+    text-align: left;
+
+    @media (max-width: calc(#{$desktop} - 1px)) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .titlescreen__title {
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .titlescreen__description {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .titlescreen__illustration {
+    order: 10;
+    margin-top: -80px;
+
+    img {
+      width: 709px;
+      height: 609px;
+    }
+  }
+
+  .titlescreen__button {
+    display: flex;
+    padding-left: 89px;
+    z-index: 1;
+
+    .button {
+      padding: 16px 29px 16px 26px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .titlescreen__text {
+    padding: 22px 0 30px 81px;
+
+    &::before {
+      height: 696px;
+      background-image: url("../../img/index-background-desktop@1x.jpg ");
+      top: 0;
+      left: 50%;
+    }
+  }
+
+  .titlescreen__illustration {
+    margin: 0 0 0 -159px;
+    position: absolute;
+    top: 142px;
+    left: 50%;
+
+    img {
+      width: 552px;
+      height: 499px;
+    }
+  }
+
+  .titlescreen__button {
+    padding-left: 82px;
   }
 }

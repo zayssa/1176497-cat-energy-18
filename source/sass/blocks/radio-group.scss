@@ -1,10 +1,45 @@
+.radio-group__item {
+  & + & {
+    margin-top: 12px;
+  }
+}
+
 .radio-group__label {
+  display: block;
+  padding: 6px 0 7px 46px;
   color: $headers;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  position: relative;
 
   @include font-family;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 1px solid $input-border;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+
+  input:checked + & {
+    &::after {
+      display: block;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: $color;
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      border-radius: 50%;
+    }
+  }
 }
 
 .radio-group__input {
@@ -16,4 +51,26 @@
   text-transform: uppercase;
 
   @include font-family;
+}
+
+@media (min-width: $tablet) {
+  .radio-group__label {
+    padding: 9px 0 12px 59px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+    }
+
+    input:checked + & {
+      &::after {
+        width: 18px;
+        height: 18px;
+        top: 11px;
+        left: 11px;
+      }
+    }
+  }
 }

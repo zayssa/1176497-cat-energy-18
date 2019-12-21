@@ -18,3 +18,11 @@
     color: $text;
   }
 }
+
+@media (min-width: $tablet) {
+  .button {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

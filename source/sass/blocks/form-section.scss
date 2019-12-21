@@ -1,4 +1,5 @@
 .form-section__notice {
+  margin: 0 0 40px 0;
   color: $headers;
   font-size: 14px;
   line-height: 18px;
@@ -8,6 +9,7 @@
 }
 
 .form-section__title {
+  margin: 0 0 34px 0;
   color: $headers;
   font-size: 24px;
   line-height: 24px;
@@ -16,30 +18,96 @@
   @include font-family;
 }
 
+.form-section__flexgroup {
+  margin-bottom: 23px;
+}
+
+.form-section__field {
+  margin-bottom: 14px;
+}
+
 .form-section__fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
+  margin: 0 -20px;
+  padding: 20px 19px;
+  border: 1px solid rgba($input-border, 0.5);
+
+  &--checkbox {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 @media (min-width: $tablet) {
-  .form-section__fieldset--radio {
-    padding: 25px 28px;
-    border: 1px solid rgba($input-border, 0.5);
+  .form-section__notice {
+    margin-bottom: 67px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-section__title {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-section__field {
+    margin-bottom: 20px;
+  }
+
+  .form-section__fieldset {
+    &--radio {
+      margin: 72px 0 75px 0;
+      padding: 24px 28px 23px 28px;
+      border: 1px solid rgba($input-border, 0.5);
+    }
+
+    &--checkbox {
+      margin-top: -19px;
+    }
+  }
+
+  @media (max-width: calc(#{$desktop} - 1px)) {
+    .form-section__flex--checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        flex: 1 0 34%;
+        margin-left: 60px;
+        box-sizing: border-box;
+
+        &:nth-child(2n-1) {
+          margin-left: 0;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: $desktop) {
+  .form-section__fieldset {
+    &--radio {
+      margin: 0;
+    }
+  }
+
   .form-section__flex {
     display: flex;
+    align-items: flex-start;
 
     > * {
-      flex: 1;
+      flex: 1 0 100px;
       margin-left: 80px;
+      box-sizing: border-box;
 
       &:first-child {
         margin-left: 0;
       }
     }
+  }
+
+  .form-section__flexgroup {
+    margin-bottom: 2px;
   }
 }

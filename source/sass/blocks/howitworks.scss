@@ -1,5 +1,5 @@
 .howitworks__title {
-  margin: 0 0 35px 0;
+  margin: 0 0 39px 0;
   padding: 0;
   color: $headers;
   font-size: 36px;
@@ -32,25 +32,67 @@
 
 .howitworks__text {
   margin: 0;
+  padding-top: 2px;
 }
 
 @media (min-width: $tablet) {
+  .howitworks__title {
+    margin-bottom: 52px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .howitworks__list {
     display: flex;
     flex-wrap: wrap;
+    counter-reset: list;
   }
 
   .howitworks__item {
     flex: 0 0 50%;
+    flex-direction: column;
+    min-height: 297px;
     padding-right: 30px;
     box-sizing: border-box;
+    position: relative;
+
+    &::before {
+      counter-increment: list;
+      content: counter(list);
+      color: $bg-alternate;
+      font-size: 281px;
+      line-height: 281px;
+
+      @include font-family;
+
+      position: absolute;
+      top: -40px;
+      left: 119px;
+      z-index: -1;
+    }
 
     @media (max-width: calc(#{$desktop} - 1px)) {
       &:nth-child(2n) {
         padding-right: 0;
         padding-left: 30px;
+
+        &::before {
+          left: 141px;
+        }
       }
     }
+  }
+
+  .howitworks__image {
+    flex: 0 0 80px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .howitworks__text {
+    max-width: 250px;
+    padding-top: 32px;
+    line-height: 24px;
   }
 }
 

@@ -1,11 +1,39 @@
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   min-height: 289px;
-  background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
+  padding: 65px 0 42px 0;
+  background: $color url("../../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
+  box-sizing: border-box;
+}
+
+.banner__icon {
+  margin-bottom: 42px;
 }
 
 .banner__gift {
   color: #ffffff;
+  max-width: 165px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+}
+
+@media (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
+  .banner {
+    flex-direction: row;
+    min-height: 200px;
+    padding: 33px 120px 30px 91px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .banner__icon {
+    margin-bottom: 12px;
+  }
+
+  .banner__gift {
+    text-align: left;
+  }
 }

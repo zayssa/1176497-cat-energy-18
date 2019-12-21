@@ -8,3 +8,9 @@
 .socials__item {
   margin: 0 20px;
 }
+
+@media (min-width: $tablet) {
+  .socials__item {
+    margin: 0 6px 0 28px;
+  }
+}

@@ -1,23 +1,13 @@
 .nav__list {
-  display: none;
+  @include reset-list;
 }
 
 .nav__item {
-  margin-left: 37px;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
 
   @include font-family;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
-
-.nav__active {
-  border-bottom: 2px solid $color;
 }
 
 .nav__trigger {
@@ -28,13 +18,76 @@
   background: none;
 }
 
+@media (max-width: calc(#{$tablet} - 1px)) {
+  .nav__list {
+    margin-right: -20px;
+    margin-left: -20px;
+    border-top: 1px solid rgba($input-border, 0.5);
+  }
+
+  .nav__item {
+    border-bottom: 1px solid rgba($input-border, 0.5);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    > * {
+      display: block;
+      padding: 22px 0;
+      color: $headers;
+      text-decoration: none;
+    }
+  }
+
+  .nav__trigger {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+  }
+}
+
 @media (min-width: $tablet) {
   .nav__trigger {
     display: none;
   }
 
   .nav__list {
-    @include reset-list;
     display: flex;
+  }
+
+  .nav__item {
+    margin-left: 37px;
+    font-size: 18px;
+    line-height: 25px;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .nav__active {
+    padding-bottom: 7px;
+    border-bottom: 2px solid $color;
+  }
+}
+
+@media (min-width: $desktop) {
+  .nav__item {
+    margin-left: 35px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .index {
+    .nav__item {
+      color: #ffffff;
+    }
+
+    .nav__active {
+      border-color: #ffffff;
+    }
   }
 }
