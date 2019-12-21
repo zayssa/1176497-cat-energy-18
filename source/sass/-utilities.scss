@@ -41,16 +41,26 @@
     z-index: -2;
   }
 
-  &::after {
-    display: block;
-    content: "";
-    background: $bg;
-    position: absolute;
-    top: 0;
-    right: -24px;
-    bottom: 0;
-    left: -24px;
-    z-index: -1;
+  span {
+    position: relative;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      width: 24px;
+      background: $bg;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -24px;
+      z-index: -1;
+    }
+
+    &::after {
+      right: -24px;
+      left: auto;
+    }
   }
 }
 
@@ -70,9 +80,17 @@
       top: 31px;
     }
 
-    &::after {
-      right: -39px;
-      left: -39px;
+    span {
+      &::before,
+      &::after {
+        width: 40px;
+        left: -40px;
+      }
+
+      &::after {
+        right: -40px;
+        left: auto;
+      }
     }
   }
 }
