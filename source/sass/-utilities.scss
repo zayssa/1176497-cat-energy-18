@@ -10,6 +10,7 @@
   flex-grow: 0;
   flex-shrink: 0;
   display: inherit;
+  flex-wrap: inherit;
   align-items: inherit;
   justify-content: inherit;
   width: 280px;
@@ -24,6 +25,45 @@
   }
 }
 
+.lined-heading {
+  background: $bg;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 3px;
+    background: $color;
+    position: absolute;
+    top: 20px;
+    right: -3000px;
+    left: -3000px;
+    z-index: -2;
+  }
+
+  span {
+    position: relative;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      width: 24px;
+      background: $bg;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -24px;
+      z-index: -1;
+    }
+
+    &::after {
+      right: -24px;
+      left: auto;
+    }
+  }
+}
+
 @media (max-width: calc(#{$tablet} - 1px)) {
   .mobile-hidden {
     display: none;
@@ -33,5 +73,24 @@
 @media (min-width: $tablet) {
   .mobile-only {
     display: none;
+  }
+
+  .lined-heading {
+    &::before {
+      top: 31px;
+    }
+
+    span {
+      &::before,
+      &::after {
+        width: 40px;
+        left: -40px;
+      }
+
+      &::after {
+        right: -40px;
+        left: auto;
+      }
+    }
   }
 }

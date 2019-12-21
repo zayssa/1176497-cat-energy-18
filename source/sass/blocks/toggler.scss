@@ -9,3 +9,62 @@
 
   @include font-family;
 }
+
+.toggler__span {
+  width: 84px;
+  height: 14px;
+  margin-right: 18px;
+  margin-left: 18px;
+  border: 1px solid $input-border;
+  background-color: $bg;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.toggler__pin {
+  display: block;
+  width: 35px;
+  height: 6px;
+  margin: 3px 5px;
+  padding: 0;
+  border: none;
+  background-color: $color;
+  border-radius: 3px;
+}
+
+@media (min-width: $tablet) {
+  .toggler {
+    font-size: 20px;
+  }
+
+  .toggler__span {
+    width: 428px;
+    height: 6px;
+    margin-right: 22px;
+    margin-left: 22px;
+    border: none;
+    background-color: $toggler-line;
+    border-radius: 3px;
+  }
+
+  .toggler__pin {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    margin: -14px auto 0 auto;
+    background-color: $bg;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &::before {
+      display: block;
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin: auto;
+      background-color: $color;
+      border-radius: 50%;
+    }
+  }
+}

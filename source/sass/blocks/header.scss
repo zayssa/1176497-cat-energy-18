@@ -7,13 +7,15 @@
   margin: 11px 0 12px 0;
 }
 
-.header__nav {
-  margin-top: 23px;
-}
-
 @media (max-width: calc(#{$tablet} - 1px)) {
   .header {
+    flex-wrap: wrap;
     border-bottom: 1px solid $input-border;
+  }
+
+  .header__nav {
+    display: none;
+    flex: 0 0 100%;
   }
 }
 

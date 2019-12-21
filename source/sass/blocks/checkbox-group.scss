@@ -1,4 +1,50 @@
+.checkbox-group__item {
+  & + & {
+    margin-top: 12px;
+  }
+}
+
 .checkbox-group__label {
+  display: block;
+  padding: 6px 0 7px 46px;
+  color: $headers;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+
+  @include font-family;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 1px solid $input-border;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  input:checked + & {
+    &::after {
+      display: block;
+      content: "";
+      width: 18px;
+      height: 9px;
+      border-bottom: 2px solid $color;
+      border-left: 2px solid $color;
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.checkbox-group__input {
+  @include visually-hidden;
+  border: 1px solid rgba($input-border, 0.5);
   color: $headers;
   font-size: 16px;
   line-height: 18px;
@@ -7,6 +53,37 @@
   @include font-family;
 }
 
-.checkbox-group__input {
-  @include visually-hidden;
+@media (min-width: $tablet) {
+  .checkbox-group__item {
+    margin-bottom: 31px;
+
+    & + & {
+      margin-top: 0;
+    }
+  }
+
+  .checkbox-group__label {
+    padding: 9px 0 12px 59px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+    }
+
+    input:checked + & {
+      &::after {
+        top: 11px;
+        left: 11px;
+      }
+    }
+  }
+
+  @media (max-width: calc(#{$desktop} - 1px)) {
+    .form-section__flex--checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
