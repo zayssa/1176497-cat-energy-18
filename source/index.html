@@ -78,17 +78,27 @@
             <div class="titlescreen__illustration">
               <picture>
                 <source
-                  srcset="./img/index-can-desktop@1x.png"
+                  srcset="
+                    ./img/index-can-desktop@1x.png 1x,
+                    ./img/index-can-desktop@2x.png 2x
+                  "
                   media="(min-width: 1300px)"
                   type="image/png"
                 />
                 <source
-                  srcset="./img/index-can-tablet@1x.jpg"
+                  srcset="
+                    ./img/index-can-tablet@1x.jpg 1x,
+                    ./img/index-can-tablet@2x.jpg 2x
+                  "
                   media="(min-width: 768px)"
                   type="image/jpeg"
                 />
                 <img
                   src="./img/index-can-mobile@1x.png"
+                  srcset="
+                    ./img/index-can-mobile@1x.png 1x,
+                    ./img/index-can-mobile@2x.png 2x
+                  "
                   alt="Пример продукции с курицей"
                   title="Пример продукции с курицей"
                   width="280"
@@ -167,6 +177,10 @@
                 <div class="howitworks__image">
                   <img
                     src="./img/advantage-leaf@1x.png"
+                    srcset="
+                      ./img/advantage-leaf@1x.png 1x,
+                      ./img/advantage-leaf@2x.png 2x
+                    "
                     alt="Функционально"
                     title="Функционально"
                     width="50"
@@ -182,6 +196,10 @@
                 <div class="howitworks__image">
                   <img
                     src="./img/advantage-powder@1x.png"
+                    srcset="
+                      ./img/advantage-powder@1x.png 1x,
+                      ./img/advantage-powder@2x.png 2x
+                    "
                     alt="Удобно"
                     title="Удобно"
                     width="50"
@@ -197,6 +215,10 @@
                 <div class="howitworks__image">
                   <img
                     src="./img/advantage-dining@1x.png"
+                    srcset="
+                      ./img/advantage-dining@1x.png 1x,
+                      ./img/advantage-dining@2x.png 2x
+                    "
                     alt="Питание"
                     title="Питание"
                     width="50"
@@ -212,6 +234,10 @@
                 <div class="howitworks__image">
                   <img
                     src="./img/advantage-clock@1x.png"
+                    srcset="
+                      ./img/advantage-clock@1x.png 1x,
+                      ./img/advantage-clock@2x.png 2x
+                    "
                     alt="Результат"
                     title="Результат"
                     width="50"
@@ -257,14 +283,66 @@
                 </div>
               </div>
               <div class="example__progress">
-                <img
-                  src="./img/before-mobile@1x.png"
-                  alt="кот"
-                  title="Кот"
-                  width="320"
-                  height="240"
-                  class="example__illustration"
-                />
+                <div class="example__before">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/before-desktop@1x.png 1x,
+                        ./img/before-desktop@2x.png 2x
+                      "
+                      media="(min-width: 1300px)"
+                      type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./img/before-tablet@1x.png 1x,
+                        ./img/before-tablet@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/png"
+                    />
+                    <img
+                      src="./img/before-mobile@1x.png"
+                      srcset="
+                        ./img/before-mobile@1x.png 1x,
+                        ./img/before-mobile@2x.png 2x
+                      "
+                      alt="кот"
+                      title="Кот"
+                      class="example__illustration"
+                    />
+                  </picture>
+                </div>
+                <div class="example__after">
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/after-desktop@1x.png 1x,
+                        ./img/after-desktop@2x.png 2x
+                      "
+                      media="(min-width: 1300px)"
+                      type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./img/after-tablet@1x.png 1x,
+                        ./img/after-tablet@2x.png 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/png"
+                    />
+                    <img
+                      src="./img/after-mobile@1x.png"
+                      srcset="
+                        ./img/after-mobile@1x.png 1x,
+                        ./img/after-mobile@2x.png 2x
+                      "
+                      alt="кот"
+                      title="Кот"
+                      class="example__illustration"
+                    />
+                  </picture>
+                </div>
                 <div class="example__toggler toggler">
                   Было
                   <span class="toggler__span">
@@ -294,22 +372,54 @@
           </div>
         </div>
         <div class="contacts__map map">
-          <img
-            src="./img/bg-map-mobile@1x.png"
-            alt="Карта"
-            title="Карта"
-            width="320"
-            height="400"
-            class="map__map"
-          />
-          <img
-            src="./img/map-pin.png"
-            alt="Маркер"
-            title="Маркер"
-            width="55"
-            height="53"
-            class="map__marker"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/bg-map-desktop@1x.png 1x,
+                ./img/bg-map-desktop@2x.png 2x
+              "
+              media="(min-width: 1300px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./img/bg-map-tablet@1x.png 1x,
+                ./img/bg-map-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              src="./img/bg-map-mobile@1x.png"
+              srcset="
+                ./img/bg-map-mobile@1x.png 1x,
+                ./img/bg-map-mobile@2x.png 2x
+              "
+              alt="Карта"
+              title="Карта"
+              class="map__map"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./img/map-pin-tablet@1x.png 1x,
+                ./img/map-pin-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              src="./img/map-pin-mobile@1x.png"
+              srcset="
+                ./img/map-pin-mobile@1x.png 1x,
+                ./img/map-pin-mobile@2x.png 2x
+              "
+              alt="Маркер"
+              title="Маркер"
+              class="map__marker"
+            />
+          </picture>
         </div>
       </section>
       <footer class="footer">
