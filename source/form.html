@@ -157,10 +157,9 @@
                 </div>
               </section>
               <section class="order-page__section form-section">
-                <h2 class="form-section__title">
-                  <span class="lined-heading">
-                    Контактные данные (владельца кота)
-                  </span>
+                <h2 class="form-section__title lined-heading">
+                  Контактные данные <br class="mobile-only" />
+                  (владельца кота)
                 </h2>
                 <div class="form-section__flex">
                   <div class="form-section__field text-field">
@@ -190,10 +189,8 @@
                 </div>
               </section>
               <section class="order-page__section form-section">
-                <h2 class="form-section__title">
-                  <span class="lined-heading">
-                    Комментарий
-                  </span>
+                <h2 class="form-section__title lined-heading">
+                  Комментарий
                 </h2>
                 <div class="form-section__field text-field">
                   <textarea
@@ -206,10 +203,8 @@
                 </div>
               </section>
               <section class="order-page__section form-section">
-                <h2 class="form-section__title">
-                  <span class="lined-heading">
-                    Дополнительно
-                  </span>
+                <h2 class="form-section__title lined-heading">
+                  Дополнительно
                 </h2>
                 <fieldset
                   class="form-section__fieldset form-section__fieldset--checkbox checkbox-group"
@@ -294,22 +289,54 @@
           </div>
         </div>
         <div class="contacts__map map">
-          <img
-            src="./img/bg-map-mobile@1x.png"
-            alt="Карта"
-            title="Карта"
-            width="320"
-            height="400"
-            class="map__map"
-          />
-          <img
-            src="./img/map-pin.png"
-            alt="Маркер"
-            title="Маркер"
-            width="55"
-            height="53"
-            class="map__marker"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/bg-map-desktop@1x.png 1x,
+                ./img/bg-map-desktop@2x.png 2x
+              "
+              media="(min-width: 1300px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./img/bg-map-tablet@1x.png 1x,
+                ./img/bg-map-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              src="./img/bg-map-mobile@1x.png"
+              srcset="
+                ./img/bg-map-mobile@1x.png 1x,
+                ./img/bg-map-mobile@2x.png 2x
+              "
+              alt="Карта"
+              title="Карта"
+              class="map__map"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+                ./img/map-pin-tablet@1x.png 1x,
+                ./img/map-pin-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+            />
+            <img
+              src="./img/map-pin-mobile@1x.png"
+              srcset="
+                ./img/map-pin-mobile@1x.png 1x,
+                ./img/map-pin-mobile@2x.png 2x
+              "
+              alt="Маркер"
+              title="Маркер"
+              class="map__marker"
+            />
+          </picture>
         </div>
       </section>
       <footer class="footer">

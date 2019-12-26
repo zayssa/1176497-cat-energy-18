@@ -26,41 +26,28 @@
 }
 
 .lined-heading {
-  background: $bg;
+  display: inline-block;
   position: relative;
 
-  &::before {
+  &::before,
+  &::after {
     display: block;
     content: "";
     height: 3px;
+    margin-right: 24px;
     background: $color;
     position: absolute;
-    top: 20px;
-    right: -3000px;
+    top: 14px;
+    right: 100%;
     left: -3000px;
     z-index: -2;
   }
 
-  span {
-    position: relative;
-
-    &::before,
-    &::after {
-      display: block;
-      content: "";
-      width: 24px;
-      background: $bg;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -24px;
-      z-index: -1;
-    }
-
-    &::after {
-      right: -24px;
-      left: auto;
-    }
+  &::after {
+    margin-right: auto;
+    margin-left: 24px;
+    right: -3000px;
+    left: 100%;
   }
 }
 
@@ -76,21 +63,17 @@
   }
 
   .lined-heading {
-    &::before {
-      top: 31px;
+    &::before,
+    &::after {
+      top: 22px;
     }
 
-    span {
-      &::before,
-      &::after {
-        width: 40px;
-        left: -40px;
-      }
+    &::before {
+      margin-right: 40px;
+    }
 
-      &::after {
-        right: -40px;
-        left: auto;
-      }
+    &::after {
+      margin-left: 40px;
     }
   }
 }

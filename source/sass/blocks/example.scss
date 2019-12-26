@@ -17,9 +17,26 @@
   margin-left: -20px;
 }
 
+.example__progress {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example__before,
+.example__after {
+  flex: 1 1 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.example__after {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .example__toggler {
+  flex: 0 0 100%;
   margin-top: 28px;
-  margin-left: 3px;
 }
 
 @media (min-width: $tablet) {
