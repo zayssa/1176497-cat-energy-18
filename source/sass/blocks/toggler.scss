@@ -5,9 +5,45 @@
   color: $headers;
   font-size: 16px;
   line-height: 20px;
+}
+
+.toggler__before,
+.toggler__after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
   text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
 
   @include font-family;
+
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 1px dotted;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    left: 0;
+    opacity: 0.23;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      border-bottom: 1px solid;
+      opacity: 0.4;
+    }
+  }
+
+  &:active {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .toggler__span {
@@ -30,6 +66,10 @@
   border: none;
   background-color: $color;
   border-radius: 3px;
+
+  .example__progress.after & {
+    float: right;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -51,7 +91,7 @@
     display: flex;
     width: 34px;
     height: 34px;
-    margin: -14px auto 0 auto;
+    margin: -14px 0 0 0;
     background-color: $bg;
     position: relative;
     border-radius: 50%;

@@ -70,6 +70,19 @@
       background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
       vertical-align: middle;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+      &::after {
+        width: 34px;
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

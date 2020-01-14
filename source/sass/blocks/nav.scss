@@ -1,5 +1,18 @@
 .nav__list {
   @include reset-list;
+
+  @media (max-width: calc(#{$tablet} - 1px)) {
+    body.loaded & {
+      display: none;
+      width: 100%;
+      background: $bg;
+      position: absolute;
+    }
+
+    body.menuopened & {
+      display: block;
+    }
+  }
 }
 
 .nav__item {
@@ -8,14 +21,40 @@
   text-transform: uppercase;
 
   @include font-family;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .nav__trigger {
-  display: block;
+  display: none;
+  width: 25px;
+  height: 19px;
   margin: 0;
   padding: 0;
   border: none;
-  background: none;
+  background: url("../../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+
+  @media (max-width: calc(#{$tablet} - 1px)) {
+    body.loaded & {
+      display: block;
+    }
+
+    body.menuopened & {
+      background-image: url("../../img/icon-close.svg");
+    }
+  }
 }
 
 @media (max-width: calc(#{$tablet} - 1px)) {
@@ -61,11 +100,6 @@
     margin-left: 37px;
     font-size: 18px;
     line-height: 25px;
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
   }
 
   .nav__active {

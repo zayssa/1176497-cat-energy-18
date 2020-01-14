@@ -13,9 +13,29 @@
 
   @include font-family;
 
-  &:disabled {
+  &:hover,
+  &:focus,
+  &:active {
+    background: $color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
     background: $bg-alternate;
     color: $text;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $bg-alternate-hover;
+    }
+
+    &:active {
+      color: $text-hover;
+    }
   }
 }
 

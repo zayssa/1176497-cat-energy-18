@@ -8,11 +8,35 @@
   width: 128px;
   height: 24px;
   margin: 0 auto 31px auto;
+
+  body:not(.index) & {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .footer__socials {
   padding: 22px 0 21px 0;
   border-top: 1px solid rgba($text, 0.1);
+
+  a {
+    &:hover,
+    &:focus {
+      svg {
+        fill: $color;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .footer__madeby {
@@ -33,10 +57,21 @@
       width: 27px;
       height: 34px;
       margin-top: -25px;
-      background: url("../img/htmlacademy.svg") no-repeat 0 0;
+      background: url("../../img/htmlacademy.svg") no-repeat 0 0;
       background-size: 100%;
       position: absolute;
       right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        background-image: url("../../img/htmlacademy-active.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -80,7 +115,7 @@
     padding: 53px 0 58px 0;
   }
 
-  .footer__socials img {
+  .footer__socials svg {
     transform: scale(1.3333);
   }
 }
