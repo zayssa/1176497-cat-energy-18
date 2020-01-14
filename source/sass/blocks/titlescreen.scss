@@ -8,10 +8,16 @@
     height: 305px;
     background: $color url("../img/index-background-mobile@1x.jpg") no-repeat
       50% 0;
+    background-size: 320px 305px;
     position: absolute;
     right: 0;
     left: 0;
     z-index: -1;
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 1300px),
+      only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+    }
   }
 }
 
@@ -95,8 +101,15 @@
     &::before {
       height: 696px;
       background-image: url("../../img/index-background-desktop@1x.jpg ");
+      background-position: 100% 0;
+      background-size: 720px 696px;
       top: 0;
       left: 50%;
+
+      @media only screen and (min-resolution: 192dpi) and (min-width: 1300px),
+        only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
+        background-image: url("../../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 

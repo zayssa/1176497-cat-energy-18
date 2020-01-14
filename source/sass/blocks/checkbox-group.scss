@@ -72,6 +72,18 @@
       height: 38px;
     }
 
+    input:focus + &,
+    &:hover {
+      &::before {
+        border-color: $input-border-hover;
+      }
+    }
+
+    input:active + &,
+    &:active {
+      opacity: 0.3;
+    }
+
     input:checked + & {
       &::after {
         top: 11px;
