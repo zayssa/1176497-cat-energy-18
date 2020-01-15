@@ -9,11 +9,7 @@
   background-size: 280px 289px;
   box-sizing: border-box;
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
-    only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1300px),
-    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1300px),
-    only screen and (min-device-pixel-ratio: 2) and (min-width: 1300px),
-    only screen and (min-resolution: 192dpi) and (min-width: 1300px),
+  @media only screen and (min-resolution: 192dpi) and (min-width: 1300px),
     only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
     background-image: url("../../img/gift-photo-mobile@2x.jpg");
   }
@@ -39,11 +35,7 @@
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     background-size: 708px 200px;
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px),
-      only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1300px),
-      only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1300px),
-      only screen and (min-device-pixel-ratio: 2) and (min-width: 1300px),
-      only screen and (min-resolution: 192dpi) and (min-width: 1300px),
+    @media only screen and (min-resolution: 192dpi) and (min-width: 1300px),
       only screen and (min-resolution: 2dppx) and (min-width: 1300px) {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");
     }

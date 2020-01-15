@@ -24,14 +24,20 @@
 
 .example__before,
 .example__after {
-  flex: 1 1 50%;
   width: 100%;
   overflow: hidden;
+
+  .example__progress.after & {
+    width: 0;
+  }
 }
 
 .example__after {
-  display: flex;
-  justify-content: flex-end;
+  width: 0;
+
+  .example__progress.after & {
+    width: 100%;
+  }
 }
 
 .example__toggler {
@@ -99,10 +105,10 @@
     position: relative;
   }
 
-  .example__illustration {
+  .example__before,
+  .example__after {
     margin: auto;
     position: absolute;
-    right: 0;
     bottom: 50px;
     left: 0;
   }

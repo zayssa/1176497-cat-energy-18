@@ -24,6 +24,22 @@
 
   @include font-family;
 
+  &:hover {
+    border-color: $input-border;
+  }
+
+  &:focus,
+  &.error {
+    margin: -1px;
+    border-color: $text;
+    border-width: 2px;
+    outline: none;
+  }
+
+  &.error {
+    border-color: $input-border-error;
+  }
+
   &--iconed {
     padding-right: 42px;
   }
@@ -31,11 +47,29 @@
   &--email {
     background: url("../../img/icon-mail.svg") no-repeat right 14px top 50%;
     background-size: 18px 14px;
+
+    &:focus,
+    &:active {
+      background-image: url("../../img/icon-mail-active.svg");
+    }
+
+    &.error {
+      background-image: url("../../img/icon-mail-error.svg");
+    }
   }
 
   &--phone {
     background: url("../../img/icon-phone.svg") no-repeat right 11px top 50%;
     background-size: 21px 21px;
+
+    &:focus,
+    &:active {
+      background-image: url("../../img/icon-phone-active.svg");
+    }
+
+    &.error {
+      background-image: url("../../img/icon-phone-error.svg");
+    }
   }
 }
 
