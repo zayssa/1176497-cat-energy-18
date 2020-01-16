@@ -96,7 +96,7 @@
     line-height: 24px;
   }
 
-  @media (max-width: calc(#{$desktop} - 1px)) {
+  @media (max-width: #{$desktop - 1px}) {
     .category-card {
       padding: 81px 280px 59px 52px;
       position: relative;

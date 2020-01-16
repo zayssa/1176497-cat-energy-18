@@ -1,7 +1,7 @@
 .nav__list {
   @include reset-list;
 
-  @media (max-width: calc(#{$tablet} - 1px)) {
+  @media (max-width: #{$tablet - 1px}) {
     body.loaded & {
       display: none;
       width: 100%;
@@ -44,20 +44,20 @@
   margin: 0;
   padding: 0;
   border: none;
-  background: url("../../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+  background: url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
 
-  @media (max-width: calc(#{$tablet} - 1px)) {
+  @media (max-width: #{$tablet - 1px}) {
     body.loaded & {
       display: block;
     }
 
     body.menuopened & {
-      background-image: url("../../img/icon-close.svg");
+      background-image: url("../img/icon-close.svg");
     }
   }
 }
 
-@media (max-width: calc(#{$tablet} - 1px)) {
+@media (max-width: #{$tablet - 1px}) {
   .nav__list {
     margin-right: -20px;
     margin-left: -20px;
