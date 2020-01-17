@@ -92,7 +92,7 @@
     }
   }
 
-  @media (max-width: calc(#{$desktop} - 1px)) {
+  @media (max-width: #{$desktop - 1px}) {
     .form-section__flex--checkboxes {
       display: flex;
       flex-wrap: wrap;

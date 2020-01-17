@@ -71,7 +71,7 @@
       z-index: -1;
     }
 
-    @media (max-width: calc(#{$desktop} - 1px)) {
+    @media (max-width: #{$desktop - 1px}) {
       &:nth-child(2n) {
         padding-right: 0;
         padding-left: 30px;

@@ -30,7 +30,7 @@
 }
 
 @media (min-width: $tablet) {
-  @media (max-width: calc(#{$desktop} - 1px)) {
+  @media (max-width: #{$desktop - 1px}) {
     .order-page__wrapper {
       padding-right: 37px;
       padding-left: 40px;
