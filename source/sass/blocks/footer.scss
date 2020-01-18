@@ -57,7 +57,7 @@
       width: 27px;
       height: 34px;
       margin-top: -25px;
-      background: url("../../img/htmlacademy.svg") no-repeat 0 0;
+      background: url("../img/htmlacademy.svg") no-repeat 0 0;
       background-size: 100%;
       position: absolute;
       right: 0;
@@ -66,7 +66,7 @@
     &:hover,
     &:focus {
       &::after {
-        background-image: url("../../img/htmlacademy-active.svg");
+        background-image: url("../img/htmlacademy-active.svg");
       }
     }
 

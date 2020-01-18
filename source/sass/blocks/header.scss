@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: calc(#{$tablet} - 1px)) {
+@media (max-width: #{$tablet - 1px}) {
   .header {
     flex-wrap: wrap;
     border-bottom: 1px solid $input-border;

@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="index">
     <div class="overflow-hidden">
@@ -71,6 +71,14 @@
               <picture>
                 <source
                   srcset="
+                    ./img/index-can-desktop@1x.webp 1x,
+                    ./img/index-can-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1300px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
                     ./img/index-can-desktop@1x.png 1x,
                     ./img/index-can-desktop@2x.png 2x
                   "
@@ -79,11 +87,26 @@
                 />
                 <source
                   srcset="
+                    ./img/index-can-tablet@1x.webp 1x,
+                    ./img/index-can-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
                     ./img/index-can-tablet@1x.jpg 1x,
                     ./img/index-can-tablet@2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                   type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./img/index-can-mobile@1x.webp 1x,
+                    ./img/index-can-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
                 />
                 <img
                   src="./img/index-can-mobile@1x.png"
@@ -279,6 +302,14 @@
                   <picture>
                     <source
                       srcset="
+                        ./img/before-desktop@1x.webp 1x,
+                        ./img/before-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1300px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
                         ./img/before-desktop@1x.png 1x,
                         ./img/before-desktop@2x.png 2x
                       "
@@ -287,11 +318,26 @@
                     />
                     <source
                       srcset="
+                        ./img/before-tablet@1x.webp1x,
+                        ./img/before-tablet@2x.webp   2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
                         ./img/before-tablet@1x.png 1x,
                         ./img/before-tablet@2x.png 2x
                       "
                       media="(min-width: 768px)"
                       type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./img/before-mobile@1x.webp 1x,
+                        ./img/before-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
                     />
                     <img
                       src="./img/before-mobile@1x.png"
@@ -309,6 +355,14 @@
                   <picture>
                     <source
                       srcset="
+                        ./img/after-desktop@1x.webp 1x,
+                        ./img/after-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1300px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
                         ./img/after-desktop@1x.png 1x,
                         ./img/after-desktop@2x.png 2x
                       "
@@ -317,11 +371,26 @@
                     />
                     <source
                       srcset="
+                        ./img/after-tablet@1x.webp 1x,
+                        ./img/after-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
                         ./img/after-tablet@1x.png 1x,
                         ./img/after-tablet@2x.png 2x
                       "
                       media="(min-width: 768px)"
                       type="image/png"
+                    />
+                    <source
+                      srcset="
+                        ./img/after-mobile@1x.webp 1x,
+                        ./img/after-mobile@2x.webp 2x
+                      "
+                      type="image/webp"
                     />
                     <img
                       src="./img/after-mobile@1x.png"
@@ -472,6 +541,9 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
     </div>
     <script src="./js/app.js"></script>
   </body>
