@@ -4,9 +4,7 @@
   @media (max-width: #{$tablet - 1px}) {
     body.loaded & {
       display: none;
-      width: 100%;
       background: $bg;
-      position: absolute;
     }
 
     body.menuopened & {
