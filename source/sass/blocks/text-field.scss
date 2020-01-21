@@ -107,6 +107,10 @@
   .text-field__input {
     &--textarea {
       margin-bottom: 20px;
+
+      &:focus {
+        margin-bottom: 19px;
+      }
     }
   }
 }
