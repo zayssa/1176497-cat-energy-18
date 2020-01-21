@@ -25,6 +25,7 @@
   .main-page__example {
     margin-top: -17px;
     padding-top: 43px;
+    padding-bottom: 74px;
     border-top: 1px solid $border;
     background: none;
     position: relative;
@@ -35,7 +36,7 @@
       background: $bg-alternate;
       position: absolute;
       right: 0;
-      bottom: -30px;
+      bottom: 0;
       left: 0;
       z-index: -1;
     }

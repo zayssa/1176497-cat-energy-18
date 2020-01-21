@@ -65,6 +65,16 @@
     height: 499px;
     margin: auto;
   }
+
+  @media (max-width: #{$desktop - 1px}) {
+    .example__progress {
+      padding-top: 70px;
+    }
+
+    .example__toggler {
+      margin-top: 19px;
+    }
+  }
 }
 
 @media (min-width: $desktop) {

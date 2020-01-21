@@ -22,7 +22,7 @@
 }
 
 .products__info {
-  flex: 1;
+  flex: 1 auto;
 }
 
 .products__name {
@@ -74,7 +74,7 @@
   }
 
   .products__item {
-    flex: 0 0 324px;
+    flex: 0 0 249px;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: stretch;
@@ -82,7 +82,6 @@
     margin-bottom: 13px;
     padding: 163px 37px 40px 38px;
     background: $bg-alternate;
-    box-sizing: border-box;
     position: relative;
 
     &::before {
@@ -106,16 +105,15 @@
   }
 
   .products__button {
-    flex: 0;
+    flex: 0 auto;
     margin-top: 33px;
   }
 
   .products__more {
-    flex: 0 0 324px;
+    flex: 0 0 247px;
     margin-top: 127px;
     margin-bottom: 13px;
     border: 1px solid $border;
-    box-sizing: border-box;
 
     &::before {
       display: none;
@@ -126,6 +124,6 @@
 @media (min-width: $desktop) {
   .products__item,
   .products__more {
-    flex: 0 0 245px;
+    flex: 0 0 170px;
   }
 }
